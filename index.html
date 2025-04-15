@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Career Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <!-- Quiz Section -->
+    <div id="quizSection">
+      <h2>Career Quiz</h2>
+      <form id="quizForm">
+        <div class="question active" data-question="1">
+          <p>1. What type of problems do you enjoy solving?</p>
+          <div class="options">
+            <input type="radio" name="q1" id="q1a" value="Engineering" /><label for="q1a">Technical or logical problems</label>
+            <input type="radio" name="q1" id="q1b" value="Design" /><label for="q1b">Creative design problems</label>
+            <input type="radio" name="q1" id="q1c" value="Media & Communication" /><label for="q1c">Storytelling or communication challenges</label>
+            <input type="radio" name="q1" id="q1d" value="Business & Management" /><label for="q1d">Organizational or leadership issues</label>
+          </div>
+        </div>
+
+        <div class="question" data-question="2">
+          <p>2. What's your favorite school subject?</p>
+          <div class="options">
+            <input type="radio" name="q2" id="q2a" value="Engineering" /><label for="q2a">Math or Physics</label>
+            <input type="radio" name="q2" id="q2b" value="Design" /><label for="q2b">Art or Drawing</label>
+            <input type="radio" name="q2" id="q2c" value="Media & Communication" /><label for="q2c">English or Drama</label>
+            <input type="radio" name="q2" id="q2d" value="Business & Management" /><label for="q2d">Economics or Business Studies</label>
+          </div>
+        </div>
+
+        <div class="question" data-question="3">
+          <p>3. Which activity sounds most fun?</p>
+          <div class="options">
+            <input type="radio" name="q3" id="q3a" value="Engineering" /><label for="q3a">Building or fixing things</label>
+            <input type="radio" name="q3" id="q3b" value="Design" /><label for="q3b">Sketching or crafting</label>
+            <input type="radio" name="q3" id="q3c" value="Media & Communication" /><label for="q3c">Making videos or writing stories</label>
+            <input type="radio" name="q3" id="q3d" value="Business & Management" /><label for="q3d">Running a lemonade stand</label>
+          </div>
+        </div>
+
+        <div class="question" data-question="4">
+          <p>4. What kind of workplace appeals to you?</p>
+          <div class="options">
+            <input type="radio" name="q4" id="q4a" value="Engineering" /><label for="q4a">Labs or tech companies</label>
+            <input type="radio" name="q4" id="q4b" value="Design" /><label for="q4b">Studios or creative agencies</label>
+            <input type="radio" name="q4" id="q4c" value="Media & Communication" /><label for="q4c">TV studios or publishing houses</label>
+            <input type="radio" name="q4" id="q4d" value="Business & Management" /><label for="q4d">Corporate offices or startups</label>
+          </div>
+        </div>
+
+        <div class="question" data-question="5">
+          <p>5. What's your natural strength?</p>
+          <div class="options">
+            <input type="radio" name="q5" id="q5a" value="Engineering" /><label for="q5a">Logical thinking</label>
+            <input type="radio" name="q5" id="q5b" value="Design" /><label for="q5b">Visual imagination</label>
+            <input type="radio" name="q5" id="q5c" value="Media & Communication" /><label for="q5c">Expressing ideas</label>
+            <input type="radio" name="q5" id="q5d" value="Business & Management" /><label for="q5d">Leadership</label>
+          </div>
+        </div>
+
+        <div class="navigation">
+          <button type="button" id="prevBtn">Previous</button>
+          <button type="button" id="nextBtn">Next</button>
+          <button type="button" id="submitBtn" style="display: none;">Submit</button>
+        </div>
+      </form>
+      <div id="result"></div>
+    </div>
+
+    <!-- Result Section -->
+    <div id="resultSection" class="result-container">
+      <h2>Your Recommended Career Path</h2>
+      <div class="career-result" id="careerName"></div>
+      <div class="career-description" id="careerDescription"></div>
+      <h2 style="margin-bottom: 1rem;">How to Get Started</h2>
+      <ul class="steps" id="careerSteps"></ul>
+      <button class="restart-btn" onclick="restartQuiz()">Take Quiz Again</button>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
